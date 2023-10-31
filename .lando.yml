@@ -1,7 +1,7 @@
-name: landoexample
+name: lando_example
 recipe: laravel
 config:
-  php: '8.1'
+  php: '7.4'
   composer_version: '2.6.5'
   webroot: public
   database: mariadb
