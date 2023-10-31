@@ -1,0 +1,21 @@
+name: landoexample
+recipe: laravel
+config:
+  php: '8.1'
+  composer_version: '2.6.5'
+  webroot: public
+  database: mariadb
+  cache: none
+  xdebug: false
+
+services:
+  adminlando:
+    type: phpmyadmin
+
+
+proxy:
+  appserver:
+    - hostname: landoexample.lndo.site
+
+  adminlando:
+    - hostname: adminlando.lndo.site
