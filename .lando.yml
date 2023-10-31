@@ -1,21 +1,18 @@
-name: lando_example
+name: lando-example
 recipe: laravel
 config:
-  php: '7.4'
-  composer_version: '2.6.5'
+  php: '8.1'
+  composer_version: 'latest'
+  via: nginx
   webroot: public
   database: mariadb
   cache: none
   xdebug: false
 
 services:
-  adminlando:
+  phpmyadmin:
     type: phpmyadmin
 
-
 proxy:
-  appserver:
-    - hostname: landoexample.lndo.site
-
-  adminlando:
-    - hostname: adminlando.lndo.site
+  phpmyadmin:
+    - hostname: phpmyadmin.lndo.site
