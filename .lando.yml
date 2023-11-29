@@ -12,7 +12,8 @@ config:
   config:
       server: .lando/server.conf
       vhosts: .lando/default.conf
-      params: .lando/params
+      # vhosts: .lando/custom.conf
+      # vhosts: .lando/custom2.conf
 
 
 services:
